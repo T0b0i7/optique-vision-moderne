@@ -1,3 +1,5 @@
 _tools/
 .github/
+docs/
 README.md
+.gitignore
