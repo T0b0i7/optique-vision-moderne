@@ -1,0 +1,106 @@
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>/</span><span>Rendez-vous</span></nav>
+          <p class="eyebrow">Essayage & conseil · 30 minutes</p>
+          <h1>Un créneau, et le temps de <em>choisir</em>.</h1>
+        </div>
+        <div class="page-hero__aside">
+          <p class="lead">Réservez un moment avec notre équipe : plusieurs montures préparées, un essayage sans presse et des conseils adaptés à votre visage et à votre ordonnance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="booking">
+          <div class="booking__intro" data-reveal>
+            <p class="eyebrow">Prendre rendez-vous</p>
+            <h2>Votre visite, <em>sans attente</em>.</h2>
+            <p class="lead">Remplissez le formulaire, choisissez votre agence et votre créneau. Votre demande part directement sur WhatsApp ; nous confirmons le rendez-vous pendant les heures d'ouverture.</p>
+            <ul class="booking__points">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Gratuit et sans engagement.</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>30 minutes pour essayer plusieurs montures.</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Aucun paiement en ligne : tout se règle en boutique.</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Pensez à votre ordonnance, si vous en avez une.</span></li>
+            </ul>
+          </div>
+          <div class="booking-card" data-reveal style="--delay:120ms">
+            <div id="bookingFormWrap">
+              <div class="form-head">
+                <h3>Réserver un essayage</h3>
+                <span>Confirmation WhatsApp</span>
+              </div>
+              <form id="bookingForm">
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="bookName">Votre nom *</label>
+                    <input id="bookName" name="name" type="text" autocomplete="name" placeholder="Nom et prénom" required>
+                  </div>
+                  <div class="field">
+                    <label for="bookPhone">Téléphone / WhatsApp *</label>
+                    <input id="bookPhone" name="phone" type="tel" autocomplete="tel" placeholder="+229 ..." required>
+                  </div>
+                  <fieldset class="field field--full">
+                    <legend>Agence souhaitée *</legend>
+                    <div class="agency-choices">
+                      <label class="agency-choice">
+                        <input type="radio" name="agency" value="cadjehoun" checked>
+                        <span><strong>Cadjèhoun</strong><small>Vla's Plazza</small></span>
+                      </label>
+                      <label class="agency-choice">
+                        <input type="radio" name="agency" value="steinmetz">
+                        <span><strong>Steinmetz</strong><small>Face à la MTN</small></span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <div class="field field--full">
+                    <label for="bookReason">Motif de la visite</label>
+                    <select id="bookReason" name="reason">
+                      <option>Choisir / essayer une monture</option>
+                      <option>Ajustage et réglage</option>
+                      <option>Nettoyage aux ultrasons</option>
+                      <option>Service après-vente</option>
+                      <option>Conseil sur mes verres</option>
+                      <option>Autre demande</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="slotDate">Date souhaitée *</label>
+                    <select id="slotDate" name="date" required>
+                      <option value="">Choisir une date</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="slotTime">Créneau *</label>
+                    <select id="slotTime" name="time" required>
+                      <option value="">Choisir un créneau</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field field--full" style="margin-top:18px">
+                  <label for="bookMessage">Une précision ?</label>
+                  <textarea id="bookMessage" name="message" maxlength="400" placeholder="Votre correction, le style recherché, un modèle repéré dans le catalogue…"></textarea>
+                </div>
+                <div class="form-status" id="formStatus" role="alert"></div>
+                <div class="form-foot">
+                  <button class="btn btn--dark btn--block" type="submit">Envoyer ma demande <svg aria-hidden="true"><use href="#i-wa"/></svg></button>
+                  <p class="fineprint">En validant, WhatsApp s'ouvre avec un message pré-rempli. Aucune donnée n'est stockée sur ce site. <a data-phone href="tel:+22901000000">Appeler plutôt</a></p>
+                  <noscript><p class="fineprint">Le formulaire nécessite JavaScript. Appelez-nous au <a data-phone href="tel:+22901000000"><span data-phone-text>+229 01 00 00 00 00</span></a> ou écrivez-nous sur WhatsApp.</p></noscript>
+                </div>
+              </form>
+            </div>
+            <div class="booking-success" id="bookingSuccess">
+              <span class="booking-success__icon"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+              <h3 tabindex="-1">Votre demande est prête.</h3>
+              <p>WhatsApp s'est ouvert avec le récapitulatif de votre rendez-vous. Il ne reste qu'à envoyer le message : nous confirmons le créneau pendant les heures d'ouverture.</p>
+              <a class="btn btn--gold" id="successWa" href="https://wa.me/22901000000" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg> Ouvrir WhatsApp</a>
+              <button class="btn btn--outline" type="button" id="bookingAgain">Nouvelle demande</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
